@@ -1,0 +1,9 @@
+reserve 8: heapVar;
+
+main {
+	
+	declare 8: stackVar;
+	register stackVar >> ex;
+	put +4 >> ex;
+	return ex >> stackVar;
+}

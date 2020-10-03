@@ -82,6 +82,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/rizet/source/bhlac/bhlac_arg_type.cpp">
+			<Option target="bhlac"/>
+		</Unit>
+		<Unit filename="/home/rizet/source/bhlac/bhlac_arg_type.h">
+			<Option target="bhlac"/>
+		</Unit>
+		<Unit filename="/home/rizet/source/bhlac/bhlac_argument.cpp">
+			<Option target="bhlac"/>
+		</Unit>
+		<Unit filename="/home/rizet/source/bhlac/bhlac_argument.h">
+			<Option target="bhlac"/>
+		</Unit>
 		<Unit filename="/home/rizet/source/bhlac/main.cpp">
 			<Option target="bhlac"/>
 		</Unit>

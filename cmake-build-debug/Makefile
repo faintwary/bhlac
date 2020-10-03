@@ -143,6 +143,60 @@ bhlac/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/build
 .PHONY : bhlac/fast
 
+bhlac_arg_type.o: bhlac_arg_type.cpp.o
+
+.PHONY : bhlac_arg_type.o
+
+# target to build an object file
+bhlac_arg_type.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/bhlac_arg_type.cpp.o
+.PHONY : bhlac_arg_type.cpp.o
+
+bhlac_arg_type.i: bhlac_arg_type.cpp.i
+
+.PHONY : bhlac_arg_type.i
+
+# target to preprocess a source file
+bhlac_arg_type.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/bhlac_arg_type.cpp.i
+.PHONY : bhlac_arg_type.cpp.i
+
+bhlac_arg_type.s: bhlac_arg_type.cpp.s
+
+.PHONY : bhlac_arg_type.s
+
+# target to generate assembly for a file
+bhlac_arg_type.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/bhlac_arg_type.cpp.s
+.PHONY : bhlac_arg_type.cpp.s
+
+bhlac_argument.o: bhlac_argument.cpp.o
+
+.PHONY : bhlac_argument.o
+
+# target to build an object file
+bhlac_argument.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/bhlac_argument.cpp.o
+.PHONY : bhlac_argument.cpp.o
+
+bhlac_argument.i: bhlac_argument.cpp.i
+
+.PHONY : bhlac_argument.i
+
+# target to preprocess a source file
+bhlac_argument.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/bhlac_argument.cpp.i
+.PHONY : bhlac_argument.cpp.i
+
+bhlac_argument.s: bhlac_argument.cpp.s
+
+.PHONY : bhlac_argument.s
+
+# target to generate assembly for a file
+bhlac_argument.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bhlac.dir/build.make CMakeFiles/bhlac.dir/bhlac_argument.cpp.s
+.PHONY : bhlac_argument.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -179,6 +233,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... bhlac"
+	@echo "... bhlac_arg_type.o"
+	@echo "... bhlac_arg_type.i"
+	@echo "... bhlac_arg_type.s"
+	@echo "... bhlac_argument.o"
+	@echo "... bhlac_argument.i"
+	@echo "... bhlac_argument.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
