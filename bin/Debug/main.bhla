@@ -1,9 +1,0 @@
-reserve 8: myVarOnHeap ('H');
-
-main {
-
-	declare 8: myVarOnStack ('S');
-	register myVarOnStack as cx;
-	put +4 >> cx;
-	return cx as myVarOnStack;
-}
