@@ -6,12 +6,12 @@ namespace bhlac {
     class bhlac_argument {
 
     public:
-        bhlac_argument(const char *content_str, arg_type arg_t);
-        char* getContent(void);
+        bhlac_argument(std::string content_str, arg_type arg_t);
+        std::string getContent(void);
         int getEnum(void);
 
     private:
-        char* content;
+        std::string content;
         int enum_code;
     };
 }

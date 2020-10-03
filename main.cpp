@@ -32,7 +32,7 @@ bool ends_with(std::string const &fullString, std::string const &ending) {
 }
 
 //! NOT MY CODE
-bool readFile(const char * fileName, std::vector<std::string>* pVector)
+bool readFile(std::string fileName, std::vector<std::string>* pVector)
 {
     // Open the File
     std::ifstream in(fileName);
@@ -45,7 +45,7 @@ bool readFile(const char * fileName, std::vector<std::string>* pVector)
 
     std::string str;
 
-    // Read the next line from File untill it reaches the end.
+    // Read the next line from File until it reaches the end.
     while (std::getline(in, str))
     {
         pVector->push_back(str);
@@ -142,9 +142,9 @@ int main(int argc, char** argv) {
         if (str_iter == "--echo-source")
             echo_source = true;
 
-        std::cout << arg_t_str << TAB << TAB << (arg_t_str == "BHLA SOURCE" ? "" : "\t") << str_iter << CRLF;
+        std::cout << arg_t_str << TAB << TAB << (arg_t_str == "BHLA SOURCE" ? "" : TAB) << str_iter << CRLF;
 
-        processed_args.push_back(bhlac_argument(str_iter.c_str(), arg_t));
+        processed_args.push_back(bhlac_argument(str_iter, arg_t));
     }
 
     std::vector<std::vector<std::string>*>* pFileCache = new std::vector<std::vector<std::string>*>();
@@ -159,7 +159,7 @@ int main(int argc, char** argv) {
 
             if (!readFile(arg_iter.getContent(), pCache)) {
 
-                compile_err("error in reading file " + *(arg_iter.getContent()));
+                compile_err("error in reading file " + *(arg_iter.getContent().c_str()));
                 return 0;
             }
             else {
@@ -171,15 +171,15 @@ int main(int argc, char** argv) {
 
     if (echo_source) {
 
-        std::cout << "Source: " << CRLF << "-=-=-=-=-=-=-=-";
+        std::cout << "Source: " << CRLF << "-=-=-=-=-=-=-=-" << CRLF;
 
         for (std::vector<std::string>* vector_iter : *pFileCache) {
 
             for (std::string str_iter : *vector_iter) {
 
-                std::cout << str_iter;
+                std::cout << CRLF << str_iter;
             }
-            std::cout << "-=-=-=-=-=-=-=-=-=-=-=-";
+            std::cout << CRLF << CRLF << "-=-=-=-=-=-=-=-=-=-=-=-";
         }
     }
 

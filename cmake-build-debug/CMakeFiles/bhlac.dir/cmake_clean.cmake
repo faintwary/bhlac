@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/bhlac.dir/bhlac_arg_type.cpp.o"
+  "CMakeFiles/bhlac.dir/bhlac_argument.cpp.o"
   "CMakeFiles/bhlac.dir/main.cpp.o"
   "bhlac"
   "bhlac.pdb"

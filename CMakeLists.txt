@@ -3,4 +3,4 @@ project(bhlac)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(bhlac main.cpp)
+add_executable(bhlac main.cpp bhlac_arg_type.cpp bhlac_argument.cpp)

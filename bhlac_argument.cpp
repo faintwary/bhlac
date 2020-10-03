@@ -1,13 +1,14 @@
+#include <string>
 #include "bhlac_arg_type.h"
 #include "bhlac_argument.h"
 
-    bhlac::bhlac_argument::bhlac_argument(const char* content_str, bhlac::arg_type arg_t) {
+    bhlac::bhlac_argument::bhlac_argument(std::string content_str, bhlac::arg_type arg_t) {
 
         enum_code = arg_t.get_enum();
-        *content = *content_str;
+        content = content_str;
     }
 
-    char* bhlac::bhlac_argument::getContent(void) {
+    std::string bhlac::bhlac_argument::getContent(void) {
 
         return content;
     }
